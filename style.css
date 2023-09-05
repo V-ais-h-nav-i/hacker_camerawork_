@@ -76,7 +76,7 @@ body {
    
    .navbar-icons a.active:hover{
      /* background: linear-gradient(45deg, #f06, #3cf); */
-     background: linear-gradient(45deg, #000, #888, #ccc);
+     background: black ;
      -webkit-text-fill-color: transparent;
      -webkit-background-clip: text;
    }

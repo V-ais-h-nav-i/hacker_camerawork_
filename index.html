@@ -1,1 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hacker_camerawork</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <section class="home" id="home">
+      <!-- Logo and Menu Button Navbar -->
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo-1.png" alt="Logo" loading="lazy" />
+        </div>
+        <div class="navbar-icons">
+          <a href="#home" data-link="home" class="active">Home</a>
+          <a href="#about" data-link="about" class="active">About</a>
+          <a href="#contact" data-link="contact" class="active">Contact</a>
+          <a
+            href="https://instagram.com/hacker_camerawork?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Category Boxes -->
+      <div class="category-box">
+        <a href="#portrait-section">
+          <!-- Link to the Portrait section -->
+          <h2>Portrait</h2>
+          <!-- Add content for Portrait category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#wildlife-section">
+          <!-- Link to the Wildlife section -->
+          <h2>Wildlife</h2>
+          <!-- Add content for Wildlife category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#birds-section">
+          <!-- Link to the Birds section -->
+          <h2>Birds</h2>
+          <!-- Add content for Birds category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#architecture-section">
+          <!-- Link to the Architecture section -->
+          <h2>Architecture</h2>
+          <!-- Add content for Architecture category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#sunrise-sunset-section">
+          <!-- Link to the Sunrise and Sunset section -->
+          <h2>Sunrise and Sunset</h2>
+          <!-- Add content for Sunrise and Sunset category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#street-section">
+          <!-- Link to the Street section -->
+          <h2>Street</h2>
+          <!-- Add content for Street category -->
+        </a>
+      </div>
+
+      <div class="category-box">
+        <a href="#butterfly-section">
+          <!-- Link to the Butterfly section -->
+          <h2>Butterfly</h2>
+          <!-- Add content for Butterfly category -->
+        </a>
+      </div>
+    </section>
+
+    <!-- Sections below -->
+    <section class="section" id="portrait-section">
+      <h2>Portrait</h2>
+      <p>
+        Portrait photography is about capturing the essence, personality,
+        identity and attitude of a person utilizing backgrounds, lighting and
+        posing. A photo becomes a portrait when the subject along with the
+        background, lighting and emotion can evoke a sense of connection between
+        the viewer and the portrait photograph.
+      </p>
+
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="seagirl.jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('seagirl.jpg')"
+        />
+        <img
+          src="grassbaby.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('grassbaby.jpg')"
+        />
+        <img
+          src="minigirl.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('minigirl.jpg')"
+        />
+        <img
+          src="littlekrishna.jpg"
+          alt="Portrait 4"
+          loading="lazy"
+          onclick="openImage('littlekrishna.JPG')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="wildlife-section">
+      <h2>Wildlife</h2>
+      <p>
+        Animal photography is a type of photography that capture images of
+        animals in their natural or domestic settings. It can include wildlife
+        photography, which focuses on animals in the wild, or pet photography,
+        which takes photos of people's pets. Animal photography can show the
+        animals in action or in detail. Animal photography can also help us see
+        animals in a new way and understand their behavior and characteristics.
+      </p>
+
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="Squirrel (1).jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('Squirrel.jpg')"
+        />
+        <img
+          src="Graden Lizard (1).jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('Graden Lizard.jpg')"
+        />
+        <img
+          src="monkey.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('monkey.jpg')"
+        />
+        <img
+          src="Grey Langur (1).jpg"
+          alt="Portrait 4"
+          loading="lazy"
+          onclick="openImage('Grey Langur.jpg')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="birds-section">
+      <h2>Birds</h2>
+      <p>
+        Bird photography is a type of wildlife photography specifically
+        associated with photographing birds. Bird photographers use cameras with
+        fast shutter speeds, good low-light performance, and image resolution,
+        as well as zoom lenses to photograph birds from a distance without
+        affecting their behavior.
+      </p>
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="pigeon (1).jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('pigeon.jpg')"
+        />
+        <img
+          src="purplegreen pigeon.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('purplegreen pigeon.jpg')"
+        />
+        <img
+          src="whitepigeon.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('whitepigeon.jpg')"
+        />
+        <img
+          src="kissing birds (1).jpg"
+          alt="Portrait 4"
+          loading="lazy"
+          onclick="openImage('kissing birds.jpg')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="architecture-section">
+      <h2>Architecture</h2>
+      <p>
+        Architectural photography is a genre of photography that focuses on
+        capturing photographs of buildings or structures. It also involves
+        photographing the interiors and exteriors of buildings, bridges,
+        structures, and cityscapes. When compared to other photography fields,
+        this kind of photography is less dynamic as it demands you to spend a
+        lot of time contemplating a scene or an environment.
+      </p>
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="archi1.jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('archi1.jpg')"
+        />
+        <img
+          src="archi2.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('archi2.jpg')"
+        />
+        <img
+          src="archi3.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('archi3.jpg')"
+        />
+        <img
+          src="archi4.jpg"
+          alt="Portrait 4"
+          loading="lazy"
+          onclick="openImage('archi4.jpg')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="sunrise-sunset-section">
+      <h2>Sunrise And Sunset</h2>
+      <p>
+        Sunrise and Sunset provide more dramatic lighting for your images than
+        any other time of day. The low angle of the sun in the sky refracts
+        light in such a way that covers your subject in glorious rich color.
+      </p>
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="Sun1.jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('Sun1.jpg')"
+        />
+        <img
+          src="Sun2.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('Sun2.jpg')"
+        />
+        <img
+          src="Sun3.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('Sun3.jpg')"
+        />
+        <img
+          src="Sun4.jpg"
+          alt="Portrait 4"
+          loading="lazy"
+          onclick="openImage('Sun4.jpg')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="street-section">
+      <h2>Street</h2>
+      <p>
+        street photography, a genre of photography that records everyday life in
+        a public place. The very publicness of the setting enables the
+        photographer to take candid pictures of strangers, often without their
+        knowledge. Street photographers do not necessarily have a social purpose
+        in mind, but they prefer to isolate and capture moments which might
+        otherwise go unnoticed.
+      </p>
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="Street1.jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('Street1.jpg')"
+        />
+        <img
+          src="Street2.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('Street2.jpg')"
+        />
+        <img
+          src="Street3.jpg"
+          alt="Portrait 3"
+          loading="lazy"
+          onclick="openImage('Street3.jpg')"
+        />
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="section" id="butterfly-section">
+      <h2>Butterfly</h2>
+      <p>
+        Butterfly is one of the most beautiful and wonderful creature in the
+        world. The natural colors, patterns and shapes of Butterfly are so
+        delicate and attractive that we never hesitate to photographing it. They
+        are sharp fast and flit from one place to another place in search of
+        nectar. All the day they search for nectar rich flower and plants. They
+        are found abundance on a sunny day because there body needs the heat of
+        the sun. On early cool morning they widely open the wings towards the
+        sun in an exposed manner to warm their flight muscles. This is the best
+        time to get close to it and photograph it creatively. In early morning,
+        two things is in our favors.
+      </p>
+      <!-- Image Gallery -->
+      <div class="image-gallery">
+        <img
+          src="butter1.jpg"
+          alt="Portrait 1"
+          loading="lazy"
+          onclick="openImage('butter1.jpg')"
+        />
+        <img
+          src="butter2.jpg"
+          alt="Portrait 2"
+          loading="lazy"
+          onclick="openImage('butter2.jpg')"
+        />
+
+        <!-- Add more images as needed -->
+      </div>
+      <!-- Full-screen Image Modal -->
+      <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img id="fullImage" class="modal-content" src="" />
+      </div>
+    </section>
+
+    <section class="about" id="about" style="text-shadow: 2px 2px 8px #938f8f">
+      <h1>Hi I'm Pavan</h1>
+      <p>
+        During the trying times of the Covid-19 pandemic, a period many of us
+        found to be particularly challenging, I embarked on a quest to uncover
+        my true passion. It was during these uncertain days that I stumbled upon
+        the enchanting world of photography. In the early days, my fascination
+        with photography manifested as a mere curiosity. I eagerly joined
+        friends on their photoshoots, knowing little more about the camera than
+        the names Canon and Nikon. My focus was not on the technical aspects;
+        rather, I reveled in the art of capturing moments frozen in time. I
+        vividly recall my third photoshoot, a pivotal moment in my journey.
+        Guided by a friend, I took my first photograph. It was as though a spark
+        had been ignited within me. The very next day, I sought out a camera for
+        rent, determined to explore this newfound passion. I began taking
+        photographs, experimenting with different modes, and eagerly examining
+        the results. As I delved deeper into the realm of photography, my hunger
+        for knowledge grew. I voraciously devoured resources on camera models,
+        specifications, and techniques. Armed with Google and YouTube, I
+        absorbed both theoretical concepts and practical know-how. Gradually, my
+        skills improved with each snapshot, and I began to decipher the
+        intricate checklist of elements necessary for crafting exceptional
+        images. The path became clearer with every click of the shutter, and I
+        knew I had unearthed my true passion. This revelation prompted me to
+        invest in my own camera, solidifying my commitment to this captivating
+        craft. Since then, my journey with photography has been a continuous and
+        enriching exploration.
+        <!--  Below, you will find a selection of my favorite
+        images, each one capturing a moment from this incredible odyssey. -->
+      </p>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <img
+          class="profile-photo"
+          src="contactimg.jpg"
+          alt="Profile Photo"
+          loading="lazy"
+          width="280"
+          height="420"
+        />
+        <h1>Pavan Kumar Nagendla</h1>
+        <p>
+          Follow me on Instagram:
+          <a
+            href="https://instagram.com/hacker_camerawork?igshid=MzRlODBiNWFlZA=="
+            >@hacker_camerawork</a
+          >
+        </p>
+        <p>
+          Contact me at:
+          <a href="mailto:hackercamerwork.com">hackercamerawork.com</a>
+        </p>
+      </div>
+
+      <footer class="footerbar">
+        <div class="logo">
+          <img src="white-logo.png" alt="Logo" />
+        </div>
+        <div class="footer-content">
+          <a
+            href="https://instagram.com/hacker_camerawork?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/pavankumar.kalyan.96?mibextid=ZbWKwL"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="tel:+91123456789" style="color: white; text-decoration: none"
+            >Phone: +91 7981471527</a
+          >
+        </div>
+      </footer>
+    </section>
+
+    <script>
+      // Function to open the image in full-screen mode
+      function openImage(imageUrl) {
+        var modal = document.getElementById("imageModal");
+        var fullImage = document.getElementById("fullImage");
+
+        fullImage.src = imageUrl;
+        modal.style.display = "block";
+      }
+
+      // Function to close the full-screen image
+      function closeImage() {
+        var modal = document.getElementById("imageModal");
+        modal.style.display = "none";
+      }
+
+      const onSubmit = (formData) => {
+        const mailtoLink = `mailto:pavannagendla.n@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+        window.location.href = mailtoLink;
+      };
+
+      function onSubmitForm(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const formData = { name, email, subject, message };
+        // Construct the mailto link
+        const mailtoLink = `mailto:pavannagendla.n@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+
+        // Open the user's default email client
+        window.location.href = mailtoLink;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=FontName&display=swap');
+/* Add styles for the background image */
+body {
+    margin: 0;
+    padding: 0;
+ }
+ /* Style the home section */
+.home {
+    margin: 0;
+    padding: 0;
+    background-image: url('lense.JPG'); /* Replace with your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center text horizontally */
+    /* height: 100vh; Set the height of the home section to the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+  /* Add styles for the navigation bar */
+  .home.navbar {
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px; /* Add horizontal padding */
+    background-color: transparent; /* Set the initial background color to transparent */
+    transition: background-color 0.3s ease; /* Add a transition effect for background color */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+ .logo {
+    width: 160px; /* Adjust the size of the circle */
+    height: 30px; /* Adjust the size of the circle */
+    overflow: hidden; /* Ensures the image fits within the circle */
+    text-align: center;
+    padding: 10px;
+    margin: 5px; 
+    display: flex;
+    align-items: center;
+ }
+ 
+ .logo img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* Style the navigation links container */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+    padding: 10px;
+    margin: 5px;
+  }
+
+ .navbar-icons a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.navbar-icons a.active{
+    color: #fff;
+   }
+   
+   .navbar-icons a.active:hover{
+     /* background: linear-gradient(45deg, #f06, #3cf); */
+     background: linear-gradient(45deg, #000, #888, #ccc);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+   }
+
+    /* Style the buttons within the home section */
+.home .category-box a {
+    display: block; /* Make the buttons block elements */
+    padding: 10px 0; /* Adjust padding as needed */
+    background-color:transparent; /* Background color for buttons */
+    color: white;
+    text-decoration: none; /* Remove underlines from links */
+    transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+/* Hover effect for the buttons */
+.home .category-box a:hover {
+    background-color: rgba(0, 0, 0, 0.7);/* Adjust the alpha value for transparency */
+}
+
+ 
+ /* Style the headings like buttons */
+ .category-box a {
+    display: inline-block;
+    margin: 2px;
+    background-color: #d8d6d6; /* Background color for buttons */
+    color: white;
+    text-decoration: none; /* Remove underlines from links */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add a transition effect */    
+}
+
+/* Hover effect for the buttons */
+.category-box a:hover {
+    /* Semi-transparent gray with a blur effect */
+background-color: rgba(0, 0, 0, 0.7);/* Adjust the alpha value for transparency */
+}
+
+/* Style the Portrait section */
+#portrait-section, #wildlife-section, #birds-section, #architecture-section, #sunrise-sunset-section, #street-section, #butterfly-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: black;
+}
+
+#portrait-section h2, #wildlife-section  h2,#birds-section h2, #architecture-section h2, #sunrise-sunset-section h2, #street-section h2, #butterfly-section h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#portrait-section p, #wildlife-section p, #birds-section p, #architecture-section p, #sunrise-sunset-section p, #street-section p, #butterfly-section p{
+    font-size: 24px;
+    color:#555;
+    padding: 10px 70px;
+    margin: 10px;
+}
+
+/* Style the modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+    z-index: 9999;
+    overflow: auto;
+}
+  
+  /* Style the modal content (the image) */
+  .modal-content {
+    display: block;
+    margin: 10% auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+/* Style the image gallery */
+.image-gallery {
+    display: flex;
+    justify-content: flex-start; /* Align images from left to right */
+    gap: 10px;
+    overflow: auto; /* Enable horizontal scrolling if needed */
+}
+
+/* Style each image box */
+.image-gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Maintain aspect ratio and cover the box */
+    cursor: pointer; /* Change cursor to pointer for clickable images */
+}
+
+ 
+ .about {
+    margin: 0;
+    padding: 0;
+    background-image: url('mypic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top 30%; /* Center the background image */
+    font-family: Arial, sans-serif;
+    padding: 120px;
+    margin: 0px;
+    text-align: center; /* Center text horizontally */
+}
+
+.about h1 {
+    font-size: 24px; /* Increase font size for headings */
+}
+
+.about p {
+    font-size: 24px; /* Increase font size for paragraphs */
+    line-height: 1.5; /* Improve readability with line-height */
+}
+.contact-container {
+  margin: 0px;
+  padding: 30px;
+  background-color: black;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  /* border-radius: 15px; */
+  /* box-shadow: 0 0 15px black; */
+  color: white;
+  
+}
+.profile-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px black;
+  
+}
+
+  /* Style for the footerbar */
+.footerbar {
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px); 
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footerbar .logo {
+    /* width: 160px; */
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.footerbar .contact-info {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footerbar .contact-info a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    margin-left: 20px;
+    /* margin-right: 0; Add margin-right to create space between links */
+}
+
+
+.bxl-instagram, .bxl-facebook {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media query for smartphones */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for the home section on smartphones */
+    .home {
+        /* Adjust home section styles for smartphones */
+    }
+
+    /* Adjust styles for the category boxes on smartphones */
+    .category-box a {
+        padding: 5px 10px; /* Reduce padding for buttons */
+        font-size: 14px; /* Reduce font size for buttons */
+    }
+
+    /* Adjust the size of the logo for smartphones */
+    .logo {
+        width: 100px; /* Reduce the width of the logo */
+        height: 25px; /* Reduce the height of the logo */
+    }
+
+    .navbar-icons a{  
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    /* Reduce font size for all text in category boxes */
+    #portrait-section h2,
+    #wildlife-section h2,
+    #birds-section h2,
+    #architecture-section h2,
+    #sunrise-sunset-section h2,
+    #street-section h2,
+    #butterfly-section h2
+    {
+        font-size: 20px; /* Reduce font size for text */
+    }
+
+    #portrait-section p,
+    #wildlife-section p,
+    #birds-section p,
+    #architecture-section p,
+    #sunrise-sunset-section p,
+    #street-section p,
+    #butterfly-section p{
+        font-size: 14px;
+        padding: 20px;
+    }
+/* Reduce padding for about content and set font size for text content */
+.about {
+    padding: 45px; /* Reduce padding for about content */
+}
+
+.about h1 {
+    font-size: 20px; /* Set font size for text content */
+}
+.about p{
+    font-size: 14px; 
+}
+
+.footerbar .logo{
+    width: 100px; /* Reduce the width of the logo */
+    height: 25px;
+}
+
+}
+
+/* Media query for tablets */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /* Adjust styles for the home section on smartphones */
+  .home {
+    /* Adjust home section styles for smartphones */
+}
+
+/* Adjust styles for the category boxes on smartphones */
+.category-box a {
+    padding: 5px 10px; /* Reduce padding for buttons */
+    font-size: 16px; /* Reduce font size for buttons */
+}
+
+/* Adjust the size of the logo for smartphones */
+.logo {
+    width: 140px; /* Reduce the width of the logo */
+    height: 28px; /* Reduce the height of the logo */
+}
+
+.navbar-icons a{  
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+/* Reduce font size for all text in category boxes */
+#portrait-section h2,
+#wildlife-section h2,
+#birds-section h2,
+#architecture-section h2,
+#sunrise-sunset-section h2,
+#street-section h2,
+#butterfly-section h2
+{
+    font-size: 24px; /* Reduce font size for text */
+}
+
+#portrait-section p,
+#wildlife-section p,
+#birds-section p,
+#architecture-section p,
+#sunrise-sunset-section p,
+#street-section p,
+#butterfly-section p{
+    font-size: 16px;
+    padding: 20px;
+}
+/* Reduce padding for about content and set font size for text content */
+.about {
+padding: 45px; /* Reduce padding for about content */
+}
+
+.about h1 {
+font-size: 24px; /* Set font size for text content */
+}
+.about p{
+font-size: 16px; 
+}
+
+.footerbar .logo{
+width: 140px; /* Reduce the width of the logo */
+height: 28px;
+}
+}
+
